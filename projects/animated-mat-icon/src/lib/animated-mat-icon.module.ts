@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { AnimatedMatIconComponent } from './animated-mat-icon.component';
-import { ComponentNameComponent } from './component-name/component-name.component';
 
-
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
-  declarations: [AnimatedMatIconComponent, ComponentNameComponent],
+  declarations: [AnimatedMatIconComponent],
   imports: [
+    MatIconModule,
   ],
-  exports: [AnimatedMatIconComponent, ComponentNameComponent]
+  exports: [AnimatedMatIconComponent]
 })
 export class AnimatedMatIconModule { }

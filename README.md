@@ -1,28 +1,61 @@
-# AnimatedMatIcon
+# Animated Mat Icon
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2.
+A simple light weight package for animating angular mat icons
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#### Using npm
 
-## Code scaffolding
+```shell
+npm install animated-mat-icon --save
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### Using yarn
 
-## Build
+```shell
+yarn add animated-mat-icon
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Setup & Usage
 
-## Running unit tests
+To access `<animated-mat-icon>` in the app, you need to import `AnimatedMatIconModule` in the module.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```typescript
+...
+import { AnimatedMatIconModule } from 'animated-mat-icon';
+...
 
-## Running end-to-end tests
+@NgModule({
+    declarations: [
+        ...
+    ],
+    imports: [
+        ...
+        AnimatedMatIconModule,
+        ...
+    ],
+    providers: [
+        ...
+    ],
+})
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+export class YourModule {}
 
-## Further help
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# animated-mat-icon
+After that, you can use the `animated-mat-icon` in the template.
+
+```html
+<animated-mat-icon animation="heart-beat" icon="favorite"></animated-mat-icon>
+```
+
+### Inputs
+| Name       | Type   | Default   | optional  | Description |
+| ---------- | ------ | --------- | --------- | ----------- |
+| animation  | string |           | false     | Specify the animation name that you want to set on the icon |
+| icon       | string |           | false     | Specify the icon you want (Note: You can use any mat-icon)  |
+| onHover    | booelan| false     | true      | If you set this true, then the animation will happen only when you hover on top of the icon       |
+| color      | string | black     | true      | Set this to the desired color (Note: Any css color can be applied)            |
+| size       | string |           | true      | Set this to the desired size (Note: Any css size like px, %, em can be applied, remember to use the same css format)            |
+
+## Animations

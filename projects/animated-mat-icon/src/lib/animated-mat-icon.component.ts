@@ -1,20 +1,29 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input as input } from '@angular/core';
 
 @Component({
-  selector: 'lib-animated-mat-icon',
+  selector: 'animated-mat-icon',
   template: `
-    <p>
-      animated-mat-icon works!
-    </p>
+    <mat-icon [class]="onHover ? animation+'-hover' : animation" [style.color]="color" [style.font-size]="size">{{icon}}</mat-icon>
   `,
   styles: [
+    './animated-mat-icon.component.css'
   ]
 })
-export class AnimatedMatIconComponent implements OnInit {
+export class AnimatedMatIconComponent {
 
-  constructor() { }
+  @input()
+  icon!: string;
 
-  ngOnInit(): void {
-  }
+  @input()
+  animation!: string;
+
+  @input()
+  onHover!: boolean;
+
+  @input()
+  color!: boolean;
+
+  @input()
+  size!: boolean;
 
 }

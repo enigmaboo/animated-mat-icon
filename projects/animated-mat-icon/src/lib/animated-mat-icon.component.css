@@ -1,0 +1,422 @@
+
+.move-to-right, .move-to-right-hover:hover {
+    animation: move-to-right 0.5s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
+}
+.cross, .cross-hover:hover {
+    animation: cross 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
+}
+.diagonal-pulse, .diagonal-pulse-hover:hover {
+    animation: diagonal-pulse 0.5s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
+}
+.refresh-rotate, .refresh-rotate-hover:hover {
+    animation: refresh-rotate 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
+}
+.heart-beat, .heart-beat-hover:hover {
+    animation: heart-beat 0.5s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
+}
+.roll-back, .roll-back-hover:hover {
+    animation: roll-back 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
+}
+.italic-deform, .italic-deform-hover:hover {
+    animation: italic-deform 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
+}
+.winding, .winding-hover:hover {
+    animation: winding 5s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
+}
+.wrench, .wrench-hover:hover {
+    transform-origin: 79% 26%;
+    animation: wrench 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
+}
+.mouse-click, .mouse-click-hover:hover {
+    animation: mouse-click 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
+}
+.magic, .magic-hover:hover {
+    animation: magic 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
+}
+.lock, .lock-hover:hover {
+    animation: lock 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
+}
+.unlock, .unlock-hover:hover {
+    transform-origin: 75% 25%;
+    animation: unlock 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
+}
+.hourglass, .hourglass-hover:hover {
+    animation: hourglass 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
+}
+.eraser, .eraser-hover:hover {
+    animation: eraser 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
+}
+.rocket, .rocket-hover:hover {
+    animation: rocket 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
+}
+.left-right, .left-right-hover:hover {
+    animation: left-right 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
+}
+
+@keyframes move-to-right {
+    0% {
+        transform: translateX(0);
+   }
+    33% {
+        transform: translateX(-5px);
+   }
+    66% {
+        transform: translateX(5px);
+   }
+    100% {
+        transform: translateX(0);
+   }
+}
+@keyframes cross {
+    0% {
+        transform: translate(0, 0);
+   }
+    20% {
+        transform: translate(-5px, 5px);
+   }
+    40% {
+        transform: translate(-5px, -5px);
+   }
+    60% {
+        transform: translate(5px, 5px);
+   }
+    80% {
+        transform: translate(5px, -5px);
+   }
+    100% {
+        transform: translate(0, 0);
+   }
+}
+@keyframes diagonal-pulse {
+    0% {
+        transform: translate(0, 0);
+   }
+    25% {
+        transform: translate(-5px, 5px);
+   }
+    50% {
+        transform: scale(2) translate(0, 0);
+   }
+    75% {
+        transform: translate(5px, -5px);
+   }
+    100% {
+        transform: translate(0, 0);
+   }
+}
+@keyframes refresh-rotate {
+    from {
+        transform: rotate(0);
+   }
+    to {
+        transform: rotate(360deg);
+   }
+}
+@keyframes heart-beat {
+    0% {
+        transform: scale(1.5);
+   }
+    20% {
+        transform: scale(2);
+   }
+    30% {
+        transform: scale(1.5);
+   }
+    40% {
+        transform: scale(2);
+   }
+    100% {
+        transform: scale(1.5);
+   }
+}
+@keyframes roll-back {
+    0% {
+        transform: translateX(0) rotate(0);
+   }
+    33% {
+        transform: translateX(10px) rotate(0);
+   }
+    66% {
+        transform: translateX(-10px) rotate(-360deg);
+   }
+    100% {
+        transform: translateX(0) rotate(-360deg);
+   }
+}
+@keyframes italic-deform {
+    0% {
+        transform: skewX(0);
+   }
+    50% {
+        transform: skewX(12deg);
+   }
+    100% {
+        transform: skewX(0);
+   }
+}
+@keyframes winding {
+    0% {
+        transform: rotate(0);
+   }
+    10% {
+        transform: rotate(45deg);
+   }
+    17% {
+        transform: rotate(45deg);
+   }
+    20% {
+        transform: rotate(90deg);
+   }
+    27% {
+        transform: rotate(90deg);
+   }
+    30% {
+        transform: rotate(135deg);
+   }
+    37% {
+        transform: rotate(135deg);
+   }
+    40% {
+        transform: rotate(180deg);
+   }
+    47% {
+        transform: rotate(180deg);
+   }
+    50% {
+        transform: rotate(225deg);
+   }
+    57% {
+        transform: rotate(225deg);
+   }
+    60% {
+        transform: rotate(270deg);
+   }
+    67% {
+        transform: rotate(270deg);
+   }
+    70% {
+        transform: rotate(315deg);
+   }
+    77% {
+        transform: rotate(315deg);
+   }
+    80% {
+        transform: rotate(360deg);
+   }
+    100% {
+        transform: rotate(360deg);
+   }
+}
+@keyframes wrench {
+    0% {
+        transform: rotate(0);
+   }
+    20% {
+        transform: rotate(30deg);
+   }
+    30% {
+        transform: rotate(-20deg);
+   }
+    50% {
+        transform: rotate(30deg);
+   }
+    60% {
+        transform: rotate(-20deg);
+   }
+    100% {
+        transform: rotate(0);
+   }
+}
+@keyframes mouse-click {
+    0% {
+        transform: scale(1.5);
+   }
+    20% {
+        transform: scale(1.5);
+   }
+    22.5% {
+        transform: scale(1.2);
+   }
+    32.5% {
+        transform: scale(1.2);
+   }
+    35% {
+        transform: scale(1.5);
+   }
+    100% {
+        transform: scale(1.5);
+   }
+}
+@keyframes magic {
+    0% {
+        transform: translate(0, 0) rotate(0);
+   }
+    10% {
+        transform: translate(-5px, 2.5px) rotate(-10deg);
+   }
+    20% {
+        transform: translate(-10px, 0) rotate(-20deg);
+   }
+    30% {
+        transform: translate(-5px, -2.5px) rotate(-30deg);
+   }
+    40% {
+        transform: translate(0, 0) rotate(-20deg);
+   }
+    50% {
+        transform: translate(5px, 2.5px) rotate(-10deg);
+   }
+    60% {
+        transform: translate(10px, 0) rotate(0);
+   }
+    70% {
+        transform: translate(5px, -2.5px) rotate(10deg);
+   }
+    100% {
+        transform: translate(0, 0) rotate(0);
+   }
+}
+@keyframes lock {
+    0% {
+        transform: translateY(0);
+   }
+    20% {
+        transform: translateY(-5px);
+   }
+    30% {
+        transform: translateY(5px);
+   }
+    50% {
+        transform: translateY(-5px);
+   }
+    60% {
+        transform: translateY(5px);
+   }
+    100% {
+        transform: translateY(0);
+   }
+}
+@keyframes unlock {
+    0% {
+        transform: rotate(-15deg);
+   }
+    15% {
+        transform: rotate(-40deg);
+   }
+    30% {
+        transform: rotate(5deg);
+   }
+    45% {
+        transform: rotate(-30deg);
+   }
+    60% {
+        transform: rotate(-5deg);
+   }
+    75% {
+        transform: rotate(-20deg);
+   }
+    90% {
+        transform: rotate(-15deg);
+   }
+    100% {
+        transform: rotate(-15deg);
+   }
+}
+@keyframes hourglass {
+    0% {
+        transform: rotate(0);
+   }
+    35% {
+        transform: rotate(180deg);
+   }
+    65% {
+        transform: rotate(180deg);
+   }
+    100% {
+        transform: rotate(0);
+   }
+}
+@keyframes eraser {
+    0% {
+        transform: translate(0, 0);
+   }
+    15% {
+        transform: translate(-10px, -5px);
+   }
+    30% {
+        transform: translate(-10px, 5px);
+   }
+    45% {
+        transform: translate(-5px, -5px);
+   }
+    60% {
+        transform: translate(-5px, 5px);
+   }
+    75% {
+        transform: translate(0, 0);
+   }
+    100% {
+        transform: translate(10px, 0);
+   }
+}
+@keyframes rocket {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+   }
+    5% {
+        transform: translate(2px, 0);
+        opacity: 1;
+   }
+    10% {
+        transform: translate(1px, -2px);
+        opacity: 1;
+   }
+    15% {
+        transform: translate(3px, -1px);
+        opacity: 1;
+   }
+    20% {
+        transform: translate(2px, -3px);
+        opacity: 1;
+   }
+    25% {
+        transform: translate(4px, -2px);
+        opacity: 1;
+   }
+    50% {
+        transform: translate(10px, -10px);
+        opacity: 0;
+   }
+    51% {
+        transform: translate(-10px, 10px);
+        opacity: 0;
+   }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+   }
+}
+@keyframes left-right {
+    0% {
+        transform: translateX(0);
+   }
+    15% {
+        transform: translateX(5px);
+   }
+    30% {
+        transform: translateX(-5px);
+   }
+    45% {
+        transform: translateX(3px);
+   }
+    60% {
+        transform: translateX(-3px);
+   }
+    75% {
+        transform: translateX(0);
+   }
+    100% {
+        transform: translateX(0);
+   }
+}
