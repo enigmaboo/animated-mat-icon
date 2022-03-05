@@ -1,0 +1,48 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "animated-mat-icon": {
+      "projectType": "library",
+      "root": "projects/animated-mat-icon",
+      "sourceRoot": "projects/animated-mat-icon/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/animated-mat-icon/tsconfig.lib.json",
+            "project": "projects/animated-mat-icon/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/animated-mat-icon/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/animated-mat-icon/src/test.ts",
+            "tsConfig": "projects/animated-mat-icon/tsconfig.spec.json",
+            "karmaConfig": "projects/animated-mat-icon/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/animated-mat-icon/tsconfig.lib.json",
+              "projects/animated-mat-icon/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "animated-mat-icon"
+}

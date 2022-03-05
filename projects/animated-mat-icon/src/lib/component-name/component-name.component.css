@@ -1,0 +1,36 @@
+
+
+
+  .rotate {
+    animation: rotation 8s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+
+
+  .rotate {
+    animation: arrow-right .5s cubic-bezier(.36,.07,.57,.99) infinite;
+  }
+
+  @keyframes arrow-right {
+    0% {
+      transform: scale(1.5) translateX(0);
+    }
+    33% {
+      transform: scale(1.5) translateX(-5px);
+    }
+    66% {
+      transform: scale(1.5) translateX(5px);
+    }
+    100% {
+      transform: scale(1.5) translateX(0);
+    }
+  }
