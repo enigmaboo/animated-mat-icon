@@ -5,7 +5,7 @@ import { Component, Input as input } from '@angular/core';
   template: `
     <mat-icon [class]="onHover ? animation+'-hover' : animation" [style.color]="color" [style.font-size]="size">{{icon}}</mat-icon>
   `,
-  styles: [
+  styleUrls: [
     './animated-mat-icon.component.css'
   ]
 })
