@@ -8,7 +8,7 @@
 .diagonal-pulse, .diagonal-pulse-hover:hover {
     animation: diagonal-pulse 0.5s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
 }
-.refresh-rotate, .refresh-rotate-hover:hover {
+.refresh, .refresh-rotate-hover:hover {
     animation: refresh-rotate 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
 }
 .heart-beat, .heart-beat-hover:hover {
@@ -30,8 +30,8 @@
 .mouse-click, .mouse-click-hover:hover {
     animation: mouse-click 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
 }
-.magic, .magic-hover:hover {
-    animation: magic 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
+.brush, .brush-hover:hover {
+    animation: brush 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
 }
 .lock, .lock-hover:hover {
     animation: lock 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
@@ -43,8 +43,8 @@
 .hourglass, .hourglass-hover:hover {
     animation: hourglass 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
 }
-.eraser, .eraser-hover:hover {
-    animation: eraser 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
+.write, .write-hover:hover {
+    animation: write 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
 }
 .rocket, .rocket-hover:hover {
     animation: rocket 1s cubic-bezier(0.36, 0.07, 0.57, 0.99) infinite;
@@ -247,7 +247,7 @@
         transform: scale(1.5);
    }
 }
-@keyframes magic {
+@keyframes brush {
     0% {
         transform: translate(0, 0) rotate(0);
    }
@@ -336,7 +336,7 @@
         transform: rotate(0);
    }
 }
-@keyframes eraser {
+@keyframes write {
     0% {
         transform: translate(0, 0);
    }
