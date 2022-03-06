@@ -60,6 +60,8 @@ After that, you can use the `animated-mat-icon` in the template.
 
 ## Animations
 
+> Note: You can use any icons with any of these animations
+
 ### move-to-right
 ```html
 <animated-mat-icon animation="move-to-right" icon="arrow_right_alt"></animated-mat-icon>

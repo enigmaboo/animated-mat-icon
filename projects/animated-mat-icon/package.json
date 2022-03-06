@@ -1,11 +1,24 @@
 {
   "name": "animated-mat-icon",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "A simple lightweight package for animating angular mat icons",
+  "author": "Karthik Parameswaran",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enigmaboo/animated-mat-icon.git"
+  },
   "peerDependencies": {
     "@angular/common": "^11.1.2",
     "@angular/core": "^11.1.2"
   },
   "dependencies": {
     "tslib": "^2.0.0"
-  }
+  },
+  "keywords": [
+    "angular",
+    "animation",
+    "mat-icon",
+    "animated-mat-icon"
+  ],
+  "license": "MIT"
 }
