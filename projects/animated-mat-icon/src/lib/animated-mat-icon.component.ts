@@ -21,9 +21,9 @@ export class AnimatedMatIconComponent {
   onHover!: boolean;
 
   @input()
-  color!: boolean;
+  color!: string;
 
   @input()
-  size!: boolean;
+  size!: string;
 
 }
